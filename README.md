@@ -110,7 +110,7 @@ forge coverage
 
 # Deployment to a testnet or mainnet
 
-1. Setup environment variables
+1. Setup environment variables:
 
 You'll want to set your `SEPOLIA_RPC_URL` and `PRIVATE_KEY` as environment variables. You can add them to a `.env` file, similar to what you see in `.env.example`.
 
@@ -124,7 +124,7 @@ Optionally, add your `ETHERSCAN_API_KEY` if you want to verify your contract on 
 
 Head over to [faucets.chain.link](https://faucets.chain.link/) and get some testnet ETH. You should see the ETH show up in your metamask.
 
-2. Deploy
+2. Deploy:
 
 ```
 make deploy ARGS="--network sepolia"
@@ -132,7 +132,7 @@ make deploy ARGS="--network sepolia"
 
 This will setup a ChainlinkVRF Subscription for you. If you already have one, update it in the `scripts/HelperConfig.s.sol` file. It will also automatically add your contract as a consumer.
 
-3. Register a Chainlink Automation Upkeep
+3. Register a Chainlink Automation Upkeep:
 
 [You can follow the documentation if you get lost.](https://docs.chain.link/chainlink-automation/compatible-contracts)
 
